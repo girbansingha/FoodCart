@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import bannerImage from '/banner.jpg'
 
 import Navlist from './navlist';
 
@@ -39,6 +40,7 @@ function Head(props){
 
   return (
     <div className={classes.root}>
+      <img src={bannerImage} alt="banner" />
       <AppBar position="static">
         <Toolbar>
           <IconButton className={classes.menuButton} onClick={()=>setSideDrawer(true)} color="inherit" aria-label="Menu">
